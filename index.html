@@ -28,12 +28,25 @@
           <a href="https://www.youtube.com/watch?v=o3l3Ocp2i7I&list=PLTbQvx84FrARTeUA5pExVR5vjCOqWIplI&ab_channel=DevoxxFR" target="_blank">
             <img style="width: 100px;" src="https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6-320-80.jpg">
           </a>
+					<aside class="notes">
+						Hello everyone,
+						We are pleased to share with you our Devoxx feedback we gave to our team of developers.
+						The principle will be simple, we have just listed the topics we have seen.
+						You vote for the ones that interest you, and we give you our subjective opinion on the topic!
+					</aside>
 				</section>
 				<section data-markdown>
 					- 60 exhibitors for 3 days.
 					- 3000 visitors.
 					- 260 speakers, 220 talks.
 					- Paris JUG.
+					<aside class="notes">
+						To contextualize and quickly introduce the Devoxx.
+						This is the biggest French conference for developers and ops.
+						You can read some numbers to give you an order of scale.
+						One last point, the organizer is the Java User Group of Paris.
+						It's mainly a conference around the java world even if there are a lot of topics beyond Java
+					</aside>
 				</section>
 				<section data-markdown>
 					Topic | Hype | Maturity
@@ -96,18 +109,50 @@
 					- Another way to build APIs
 					- a REST alternative
 					- For me, won't be the replacement for REST
+					<aside class="notes">
+						Is it finally time for graphql?
+						Spoiler: I don't think so!
+						This is a "new" way of designing APIs
+						it uses HTTP but it's very different from REST
+						I had watched graphQL in 2018 for me it hasn't changed
+						and I don't think it will be a big news. Even if some platform offers graphQL API like gitlab.
+					</aside>
 				</section>
 				<section data-markdown id="zt">
 					## Zero Trust
 					- Powered by covid / remote work
 					- the idea is to copy google
 					- the zero trust you can see it with the use of your amazon/gmail account
+					<aside class="notes">
+						A really interesting conference.
+						One of the speakers was an engineer from google.
+						As is the case today, remote work has become an important part of the way we work.
+						And so new threats are coming
+						Another element is added, the BYOD, Bring You Own Device.
+						That is, everyone wants to check these emails from their own phone.
+						And this phone is not necessarily controlled by the company
+						These elements make it necessary for enterprise architectures to change.
+						The old model is the castle.
+						A VPN secures the entry in the information system of the company.
+						Very difficult to keep with BYOD
+						And it is necessary to be confident of all the walls of the castle and not only of the bridge
+						The new model is compared to the airport model with segmented access and controls everywhere.
+						For more information see the video
+					</aside>
 				</section>
 				<section data-markdown id="app">
 					## app observable pour la prod
 					- the tool behind is opentelemetry
 					- log, metrics => tracing
 					- correlation id 😉
+					<aside class="notes">
+						This conference is a feedback.
+						How to make life easier when you're on call and have to debug at 2am.
+						The speaker gives the main principles to follow and implement to better understand the applications that run in production
+						3 points, Log + Metrics give tracing
+						He implemented these principles using opentelemetry
+						A returning element in the Michelin world, use correlion id !
+					</aside>
 				</section>
 				<section data-markdown id="java">
 					## Java
@@ -115,43 +160,115 @@
 					- new threads have arrived (LOOM)
 
 					In conclusion, java is late !
+					<aside class="notes">
+						Don't do java, java is outdated!
+						Otherwise, a modern way of doing java. It is to make reactive application and for that you can use the Reactor library.
+						To quickly explain how a reactive application works.
+						It's the back end, it can be the database, that will push to the front end the update of the data.
+						On the other hand, in the Java news, there are new threads,
+						I think that all people who use java threads can be happy!
+					</aside>
 				</section>
 				<section data-markdown id="cloud">
-					## Cloud  	
+					## Cloud
 					- lots of aws and some gcp
 					- lambda function
+					<aside class="notes">
+						A quick word about Cloud providers
+						I have seen many Aws and lambda function.
+						And few Google Cloud Platform
+						Managed databases are also popular
+					</aside>
 				</section>
 				<section data-markdown id="bdd">
 					## BDD Scalable
 					- postgresql is fine
 					- difficult to migrate (vendor lock, and often too many refactors)
 					- scales are a cut above our use cases, record billions
+					<aside class="notes">
+						A feedback from Doctolib.
+						Doctolib is a French unicorn that offers to make appointments with doctors or vaccinations.
+						Usually, doctolib performed their performance tests on an overload of times 3
+						But one day the vaccination against covid arrived.
+						And there was a problem of load
+						The architects of Doctolib are looking for a database to accept ten times the load
+						Historically, they had a postgresql
+						They benchmarked different managed database solutions
+						None of them reached their expectation
+						Even if the managed databases were postgresql, there was a lot of work to do to migrate
+						Moreover the vendor lock was very/too restrictive
+						The solution was to hire a DBA, improve their request and cut the big base into several bases
+						And their conclusion is that it was enough and they think they can go even further
+					</aside>
 				</section>
 				<section data-markdown id="zdt">
 					## zero down time deploy
 					- split the release into a series of releases
 					- common sense
+					<aside class="notes">
+						It wasn't the most fun conference with the biggest revelations.
+						Without the need for a tool, it is enough to cut the big releases into small compatible releases
+						Use common sense!
+						I take this opportunity to remind you of 2 Unix principle:
+						Keep it simple, stupid
+						Do One Thing and Do It Well
+					</aside>
 				</section>
 				<section data-markdown id="femmes">
 					## Women in tech
 					- be proactive
 					- make life easier for women
+					<aside class="notes">
+						The speaker was a black woman, homosexual.
+						That's how she introduced herself
+						She shook the room
+						What I learned is that the best way to get women into tech is to be proactive.
+						For example, setting up aids for women's menstruation
+						Suggested activities other than going to drink beers in front of a soccer game
+					</aside>
 				</section>
 				<section data-markdown id="slow">
 					## Slow.tech
 					- green it, more than urgent *3 years*
 					- do not do IT if you can avoid it
+					<aside class="notes">
+						We have 3 years to keep the world as we know it otherwise climate change will be irreversible
+						The speaker gave many examples, I invite you to go and see them.
+						But what impressed me the most.
+						This message:
+						the best way to do green-it,
+						is not to do IT when possible
+						An example was to compare the AI of google to detect cancers.
+						This sounds like a very good idea. But no.
+						A team of researchers managed to do much better with dog.
+					</aside>
 				</section>
 				<section data-markdown id="log">
 					## log4shell
 					- use at own risk
 					- help open source foundations (donations, contributions)
+					<aside class="notes">
+						the first message was to remind the first line of the Apache license.
+						"use at own risk"
+						The volunteers of the Apache foundation explained us that after Log4shell,
+						they started to work with state authorities to get help
+						And they also reminded us that the best way to help them was to contribute,
+						make donations, open bugs, or simply contribute
+					</aside>
 				</section>
 				<section data-markdown id="licences">
 					## opensource licences
 					- the new thing is the ethical licenses !
 					- licenses even more restrictive than free licenses
 					- example: 996
+					<aside class="notes">
+						A very geeky subject and finally with a room full of people
+						A big reminder about the licenses types open source and free as libre
+						But the great new thing of the early 2020s is the ethical licenses
+						In a few words, these licenses are even more restrictive than the GPL.
+						They impose rules on the context (from 9am to 9pm for 6 days).
+						And other prohibit a military use of their libraries.
+					</aside>
 				</section>
         <section data-markdown id="mob">
 					## Mob Programming
