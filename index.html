@@ -35,18 +35,18 @@
 						You vote for the ones that interest you, and we give you our subjective opinion on the topic!
 					</aside>
 				</section>
-				<section data-markdown>
+				<section data-markdown data-separator-notes="^Note:">
 					- 60 exhibitors for 3 days.
 					- 3000 visitors.
 					- 260 speakers, 220 talks.
 					- Paris JUG.
-					<aside class="notes">
-						To contextualize and quickly introduce the Devoxx.
-						This is the biggest French conference for developers and ops.
-						You can read some numbers to give you an order of scale.
-						One last point, the organizer is the Java User Group of Paris.
-						It's mainly a conference around the java world even if there are a lot of topics beyond Java
-					</aside>
+
+					Note:
+					To contextualize and quickly introduce the Devoxx.
+					This is the biggest French conference for developers and ops.
+					You can read some numbers to give you an order of scale.
+					One last point, the organizer is the Java User Group of Paris.
+					It's mainly a conference around the java world even if there are a lot of topics beyond Java
 				</section>
 				<section data-markdown>
 					Topic | Hype | Maturity
@@ -96,34 +96,46 @@
 					_🥇: now 🥈: next year ? 🥉: one day ?_ 
 
 				</section>
-				<section data-markdown id="wasm">
+				<section data-markdown data-separator-notes="^Note:" id="wasm">
 					## wasm
 					<!-- ![wasm](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/WebAssembly_Logo.svg/1024px-WebAssembly_Logo.svg.png) -->
 					- To do fast javascript
 					- use cases: the adobe suite, port app in browser
 					- not yet ready for IT management
+
+					Note:
+					Several topics on wasm, web assembly.
+					To explain wasm :
+					It's assembler that runs in the browser
+					So we gain in speed compared to interpreted code
+					Several compilers have added wasm in their target
+					The most popular are rust and go
+					And some languages were created for the sole purpose of making wasm, like AssemblyJS
+					The current use cases are the porting of destock applications to a browser
+					We can mention the Adode suite and many video games
+					For Adobe, the gain was also to secure access to their application via the browser
+					In my opinion, we won't see wasm in business computing  soon
 				</section>
-				<section data-markdown id="graphql">
+				<section data-markdown data-separator-notes="^Note:" id="graphql">
 					## GraphQL
 					<!-- ![GraphQL](https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/131px-GraphQL_Logo.svg.png) -->
 					- Another way to build APIs
 					- a REST alternative
 					- For me, won't be the replacement for REST
-					<aside class="notes">
+					Note:
 						Is it finally time for graphql?
 						Spoiler: I don't think so!
 						This is a "new" way of designing APIs
 						it uses HTTP but it's very different from REST
 						I had watched graphQL in 2018 for me it hasn't changed
 						and I don't think it will be a big news. Even if some platform offers graphQL API like gitlab.
-					</aside>
 				</section>
-				<section data-markdown id="zt">
+				<section data-markdown data-separator-notes="^Note:" id="zt">
 					## Zero Trust
 					- Powered by covid / remote work
 					- the idea is to copy google
 					- the zero trust you can see it with the use of your amazon/gmail account
-					<aside class="notes">
+					Note:
 						A really interesting conference.
 						One of the speakers was an engineer from google.
 						As is the case today, remote work has become an important part of the way we work.
@@ -138,54 +150,50 @@
 						And it is necessary to be confident of all the walls of the castle and not only of the bridge
 						The new model is compared to the airport model with segmented access and controls everywhere.
 						For more information see the video
-					</aside>
 				</section>
-				<section data-markdown id="app">
+				<section data-markdown data-separator-notes="^Note:" id="app">
 					## app observable pour la prod
 					- the tool behind is opentelemetry
 					- log, metrics => tracing
 					- correlation id 😉
-					<aside class="notes">
+					Note:
 						This conference is a feedback.
 						How to make life easier when you're on call and have to debug at 2am.
 						The speaker gives the main principles to follow and implement to better understand the applications that run in production
 						3 points, Log + Metrics give tracing
 						He implemented these principles using opentelemetry
 						A returning element in the Michelin world, use correlion id !
-					</aside>
 				</section>
-				<section data-markdown id="java">
+				<section data-markdown data-separator-notes="^Note:" id="java">
 					## Java
 					- reactive application, the new way to do java
 					- new threads have arrived (LOOM)
 
 					In conclusion, java is late !
-					<aside class="notes">
+					Note:
 						Don't do java, java is outdated!
 						Otherwise, a modern way of doing java. It is to make reactive application and for that you can use the Reactor library.
 						To quickly explain how a reactive application works.
 						It's the back end, it can be the database, that will push to the front end the update of the data.
 						On the other hand, in the Java news, there are new threads,
 						I think that all people who use java threads can be happy!
-					</aside>
 				</section>
-				<section data-markdown id="cloud">
+				<section data-markdown data-separator-notes="^Note:" id="cloud">
 					## Cloud
 					- lots of aws and some gcp
 					- lambda function
-					<aside class="notes">
+					Note:
 						A quick word about Cloud providers
 						I have seen many Aws and lambda function.
 						And few Google Cloud Platform
 						Managed databases are also popular
-					</aside>
 				</section>
-				<section data-markdown id="bdd">
+				<section data-markdown data-separator-notes="^Note:" id="bdd">
 					## BDD Scalable
 					- postgresql is fine
 					- difficult to migrate (vendor lock, and often too many refactors)
 					- scales are a cut above our use cases, record billions
-					<aside class="notes">
+					Note:
 						A feedback from Doctolib.
 						Doctolib is a French unicorn that offers to make appointments with doctors or vaccinations.
 						Usually, doctolib performed their performance tests on an overload of times 3
@@ -199,39 +207,36 @@
 						Moreover the vendor lock was very/too restrictive
 						The solution was to hire a DBA, improve their request and cut the big base into several bases
 						And their conclusion is that it was enough and they think they can go even further
-					</aside>
 				</section>
-				<section data-markdown id="zdt">
+				<section data-markdown data-separator-notes="^Note:" id="zdt">
 					## zero down time deploy
 					- split the release into a series of releases
 					- common sense
-					<aside class="notes">
+					Note:
 						It wasn't the most fun conference with the biggest revelations.
 						Without the need for a tool, it is enough to cut the big releases into small compatible releases
 						Use common sense!
 						I take this opportunity to remind you of 2 Unix principle:
 						Keep it simple, stupid
 						Do One Thing and Do It Well
-					</aside>
 				</section>
-				<section data-markdown id="femmes">
+				<section data-markdown data-separator-notes="^Note:" id="femmes">
 					## Women in tech
 					- be proactive
 					- make life easier for women
-					<aside class="notes">
+					Note:
 						The speaker was a black woman, homosexual.
 						That's how she introduced herself
 						She shook the room
 						What I learned is that the best way to get women into tech is to be proactive.
 						For example, setting up aids for women's menstruation
 						Suggested activities other than going to drink beers in front of a soccer game
-					</aside>
 				</section>
-				<section data-markdown id="slow">
+				<section data-markdown data-separator-notes="^Note:" id="slow">
 					## Slow.tech
 					- green it, more than urgent *3 years*
 					- do not do IT if you can avoid it
-					<aside class="notes">
+					Note:
 						We have 3 years to keep the world as we know it otherwise climate change will be irreversible
 						The speaker gave many examples, I invite you to go and see them.
 						But what impressed me the most.
@@ -241,58 +246,55 @@
 						An example was to compare the AI of google to detect cancers.
 						This sounds like a very good idea. But no.
 						A team of researchers managed to do much better with dog.
-					</aside>
 				</section>
-				<section data-markdown id="log">
+				<section data-markdown data-separator-notes="^Note:" id="log">
 					## log4shell
 					- use at own risk
 					- help open source foundations (donations, contributions)
-					<aside class="notes">
+					Note:
 						the first message was to remind the first line of the Apache license.
 						"use at own risk"
 						The volunteers of the Apache foundation explained us that after Log4shell,
 						they started to work with state authorities to get help
 						And they also reminded us that the best way to help them was to contribute,
 						make donations, open bugs, or simply contribute
-					</aside>
 				</section>
-				<section data-markdown id="licences">
+				<section data-markdown data-separator-notes="^Note:" id="licences">
 					## opensource licences
 					- the new thing is the ethical licenses !
 					- licenses even more restrictive than free licenses
 					- example: 996
-					<aside class="notes">
+					Note:
 						A very geeky subject and finally with a room full of people
 						A big reminder about the licenses types open source and free as libre
 						But the great new thing of the early 2020s is the ethical licenses
 						In a few words, these licenses are even more restrictive than the GPL.
 						They impose rules on the context (from 9am to 9pm for 6 days).
 						And other prohibit a military use of their libraries.
-					</aside>
 				</section>
-        <section data-markdown id="mob">
+        <section data-markdown data-separator-notes="^Note:" id="mob">
 					## Mob Programming
 					- Method presentation
 					- Advantages / Disadvantages
 					- Estimated performance gain
 				</section>
-        <section data-markdown id="brain">
+        <section data-markdown data-separator-notes="^Note:" id="brain">
 					## Access my brain through an API
 					- Brainwave Analysis Helmet
 					- Data recovery
 					- Kafka / Api
 				</section>
-        <section data-markdown id="read">
+        <section data-markdown data-separator-notes="^Note:" id="read">
 					## How I helped my daughter read with machine learning
 					- Bases of machine Learning
 					- Speech Recognition
 				</section>
-        <section data-markdown id="hexagone">
+        <section data-markdown data-separator-notes="^Note:" id="hexagone">
 					## Hexagonal Architecturoplasty of a Node.js Backend: Open-Code Operation
 					- Code review front / back (3 ans)
 					- Presentation architecture in hexagon
 				</section>
-        <section data-markdown id="headers">
+        <section data-markdown data-separator-notes="^Note:" id="headers">
 					## Security with HTTP headers: Overview of possible attacks and defenses
 					- Main header http
 					- Demo of the different vulnerabilities
